@@ -131,9 +131,18 @@ map g# <Plug>(incsearch-nohl-g#)
 set ignorecase
 set smartcase
 
+" Python tab spaces
 autocmd FileType python set sw=4
 autocmd FileType python set ts=4
 autocmd FileType python set sts=4
+" html tab spaces
+autocmd FileType html set sw=2
+autocmd FileType html set ts=2
+autocmd FileType html set sts=2
+" htmldjango tab spaces
+autocmd FileType htmldjango set sw=2
+autocmd FileType htmldjango set ts=2
+autocmd FileType htmldjango set sts=2
 
 " Django recommended settings for YCM
 let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
