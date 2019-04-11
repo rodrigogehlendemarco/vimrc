@@ -38,6 +38,26 @@ set encoding=utf-8
 " Set leader key
 let mapleader="\<space>"
 
+" Bind terminal creation on current window
+nnoremap <leader>t :term ++curwin<cr>
+" Bind window resizing
+nnoremap <silent> <C-Right> <c-w><s->>
+nnoremap <silent> <C-Left> <c-w><s-<>
+nnoremap <silent> <C-Up> <c-w>+
+nnoremap <silent> <C-Down> <c-w>-
+" Bind buffer switching
+nnoremap <leader>b :ls<cr>:b<space>
+" Bind :bn and :bp
+nnoremap <C-PageUp> :bp<cr>
+nnoremap <C-PageDown> :bn<cr>
+" Bind NERDTree
+nnoremap <leader>q :NERDTree<cr>
+" Ignore terminal buffers on :ls, :bn and :bp
+autocmd TerminalOpen * if bufwinnr('') > 0 | setlocal nobuflisted | endif
+" Prevent window closing on :bd
+command Bd bp | sp | bn | bd
+nnoremap <C-Del> :Bd<cr>
+
 " Maximize screen on startup (Windows)
 au GUIEnter * simalt ~x
 " Enable Fullscreen on F11 (Windows)
@@ -107,6 +127,9 @@ map *  <Plug>(incsearch-nohl-*)
 map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
+" Set smart case sensitive search and substitution
+set ignorecase
+set smartcase
 
 autocmd FileType python set sw=4
 autocmd FileType python set ts=4
