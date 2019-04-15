@@ -23,6 +23,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 " IncSearch
 Plug 'haya14busa/incsearch.vim'
+" Indent lines
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 colorscheme gruvbox
@@ -143,6 +145,12 @@ autocmd FileType html set sts=2
 autocmd FileType htmldjango set sw=2
 autocmd FileType htmldjango set ts=2
 autocmd FileType htmldjango set sts=2
+" Tabs to spaces
+set expandtab
+
+" Set smart/auto indent
+set autoindent
+set smartindent
 
 " Django recommended settings for YCM
 let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
