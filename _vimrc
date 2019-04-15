@@ -25,6 +25,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'haya14busa/incsearch.vim'
 " Indent lines
 Plug 'Yggdroot/indentLine'
+" Vim surround management
+Plug 'tpope/vim-surround'
 call plug#end()
 
 colorscheme gruvbox
