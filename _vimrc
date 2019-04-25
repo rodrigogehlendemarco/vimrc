@@ -27,6 +27,10 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'Yggdroot/indentLine'
 " Vim surround management
 Plug 'tpope/vim-surround'
+" Vim git gutter
+Plug 'airblade/vim-gitgutter'
+" Better Whitespace
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 colorscheme gruvbox
@@ -38,6 +42,9 @@ let g:jedi#completions_enabled = 0
 set hidden
 set mouse=a
 set encoding=utf-8
+
+" 80 column mark
+set colorcolumn=80
 
 " Set leader key
 let mapleader="\<space>"
