@@ -62,7 +62,8 @@ nnoremap <leader>b :ls<cr>:b<space>
 nnoremap <C-PageUp> :bp<cr>
 nnoremap <C-PageDown> :bn<cr>
 " Bind NERDTree
-nnoremap <leader>q :NERDTree<cr>
+nnoremap <leader>qq :NERDTreeToggle<cr>
+nnoremap <leader>qf :NERDTreeFind<cr>
 " Ignore terminal buffers on :ls, :bn and :bp
 autocmd TerminalOpen * if bufwinnr('') > 0 | setlocal nobuflisted | endif
 " Prevent window closing on :bd
