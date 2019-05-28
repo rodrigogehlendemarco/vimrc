@@ -77,6 +77,8 @@ map <F11> <Esc>:call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)<C
 " Remove unecessary scrollbar (Windows)
 au VimEnter * set go-=r
 au VimEnter * set go-=L
+" Remove menu bar
+au VimEnter * set go-=m
 
 " Display line and column number in bottom ruler.
 set ruler
