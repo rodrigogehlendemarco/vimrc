@@ -31,6 +31,10 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 " Better Whitespace
 Plug 'ntpeters/vim-better-whitespace'
+" Javascript syntax
+Plug 'pangloss/vim-javascript'
+" JSX syntax
+Plug 'mxw/vim-jsx'
 call plug#end()
 
 colorscheme gruvbox
