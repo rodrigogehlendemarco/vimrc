@@ -164,6 +164,17 @@ set expandtab
 set autoindent
 set smartindent
 
+" Allow backspace in insert mode
+set backspace=indent
+set backspace+=eol
+set backspace+=start
+
+" Use the system clipboard as the default register
+set clipboard=unnamed
+if has('unnamedplus')
+        set clipboard+=unnamedplus
+endif
+
 " Django recommended settings for YCM
 let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
 let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
