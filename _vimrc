@@ -161,6 +161,10 @@ autocmd FileType html set sts=2
 autocmd FileType htmldjango set sw=2
 autocmd FileType htmldjango set ts=2
 autocmd FileType htmldjango set sts=2
+" JSX tab spaces
+autocmd FileType javascript.jsx set sw=2
+autocmd FileType javascript.jsx  set ts=2
+autocmd FileType javascript.jsx set sts=2
 " Tabs to spaces
 set expandtab
 
