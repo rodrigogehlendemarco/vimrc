@@ -201,4 +201,7 @@ set notimeout
 set nottimeout
 
 " Remove JSON conceal
-set conceallevel=0
+if has("conceal")
+  set conceallevel=0
+  au FileType * setl cole=0
+endif
