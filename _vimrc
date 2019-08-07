@@ -199,3 +199,6 @@ let g:UltiSnipsListSnippets        = "<c-k>" "List possible snippets based on cu
 " Disable timeouts
 set notimeout
 set nottimeout
+
+" Remove JSON conceal
+set conceallevel=0
